@@ -1,7 +1,9 @@
 #!/usr/bin/env bb
 
+
 (require '[clojure.edn :as edn]
          '[clojure.java.io :as io])
+
 
 (defn read-edn-file [filename]
   (with-open [reader (io/reader filename)]
@@ -39,7 +41,9 @@
 
 (def open-bag (map (fn [v] 
                
-                [(total-weight 
+                [
+                 
+                 (total-weight 
                   (get v 0) ; quantity
                   (get v 1)) ; weight
                  
@@ -48,6 +52,7 @@
                  (get v 4) ; Metal (i.e Gold, Silver, ...)
 
                  (get v 2) ; Description
+
                  ]
                 ) metals))
 
@@ -63,7 +68,7 @@
 
         (= nil function) (println "Error. You must specify a function.")
 
-        :else (println "Invalid command. Use 'help' for the list of available commands."))
-  )
+        :else (println "Invalid command. Use 'help' for the list of available commands.")))
+
 
 (-main (first *command-line-args*))
