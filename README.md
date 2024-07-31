@@ -1,6 +1,18 @@
 # gold-accountant
 
-# Example Usage
+## Functionality
+
+There are two functions
+
+- **list**: Returns an itemized list of the assets contained within the gold.edn file
+- **total**: Returns the sum of the dollar value of all assets
+
+## Configuration
+
+- `gold.edn` - Contains the inventory used to build reports
+- `prices.edn` - Is the source of the prices for the type of assets read in by the program
+
+## Example Usage
 
 To run the examples you must be able to run babashka from the command line.
 
@@ -10,16 +22,10 @@ To run the examples you must be able to run babashka from the command line.
 
 See the [Babashka documentation](https://github.com/babashka/babashka#installation) for more information
 
-## Functions
 
-There are two functions
+### Run examples as a Babaska Task
 
-- **list**: Returns an itemized list of the assets contained within the gold.edn file
-- **total**: Returns the sum of the dollar value of all assets
-
-## Run examples as a Babaska Task
-
-### **List** - as a Babashka Task
+#### **List** - as a Babashka Task
 
 `bb run list`
 
@@ -33,7 +39,7 @@ Output
 
 ![](screenshots/task-list.png)
 
-### **Total** - as a Babashka Task
+#### **Total** - as a Babashka Task
 
 bb run total
 
@@ -41,9 +47,9 @@ bb run total
 
 ![](screenshots/task-total.png)
 
-## Run examples as a shell script
+### Run examples as a shell script
 
-### **List** - as shell script
+#### **List** - as shell script
 
 `./gold.clj list`
 
@@ -57,7 +63,7 @@ Output
 
 ![](screenshots/script-list.png)
 
-### **Total** - as shell script
+#### **Total** - as shell script
 
 `./gold.clj total` Output: `$7294.20`
 
@@ -65,6 +71,6 @@ Output
 
 ---
 
-### Demo of all functionality
+# Demo of all functionality
 
 ![](screenshots/all-cli-report.png)
