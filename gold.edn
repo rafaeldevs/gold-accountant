@@ -1,0 +1,18 @@
+[
+ ;; [ coin-quantity coin-weight coin-name coin-unit coin-element]
+ 
+ [2 0.5 "American Double Eagle" :ounces :gold] 
+ [1 1 "American Double Eagle" :ounces :gold] 
+ [1 1 "Canadian Mapel Leaf" :ounces :gold] 
+;;  [4 0.5 "Mexican Silver Libertad" :ounce :silver] 
+;;  [1 5 "Alphonse Mucha" :ounce :silver] 
+;;  [1 5 "Alphonse Mucha" :ounce :silver] 
+;;  [1 1 "American Silver Eagle" :ounce :silver] 
+;;  [6 1 "Apmex 1 ounce generic" :ounce :silver] 
+;;  [2 1 "Silver Britania" :ounce :silver] 
+;;  [1 1 "Mayan Silver Coin" :ounce :silver] 
+;;  [1 2 "The Kraken Silver" :ounce :silver]
+ 
+ ;; You may add additional assets bellow...
+ 
+ ]
